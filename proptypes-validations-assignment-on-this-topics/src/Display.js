@@ -58,7 +58,7 @@ const Display = (props) => {
     const displayList = EmployeeData.map(info => {
         return(
             <div>
-                <b onMouseEnter={() => {alert(info.empName)}}>{info.empId}</b>
+                <b onMouseEnter={() => {alert("Employee Name: " +info.empName +" "+"Employee Age: "+info.age)}}>{info.empId}</b>
                 <p>{info.empName} {info.age}  {info.city} {info.designation}</p>  
             </div>
         )

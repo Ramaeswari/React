@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import './App.css'
-// import {withStyles} from '@material-ui/core/styles';
 
-// const styles = {
-//         errMsg: {
-//             color: 'red'
-//         }
-//     };
+const emailRegx = RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.[@.])");
+const nameRegx = RegExp("^[A-Z]*$");
+
 class AddInfo extends Component
 {
     state ={
@@ -51,57 +48,28 @@ class AddInfo extends Component
         let formValidate = this.state.formValidate;
         if(val.id === 'name')
         {
-            // if(val.value.length < 10 && val.value.length > 0)
-            // {
-            //     nameError = "Please Enter Name";
-            //     formValidate = false;
-            // }
-            // else{
-            //     nameError = '';
-            //     formValidate = true;
-            // }
-            nameError = 
-                    val.value.length < 10 && val.value.length > 0 ? "minimum 10 characters required" : ""; 
+         
+            if(nameRegx.test(val.value))
+            {
+                nameError = "";
+            }
+            else{
+                nameError = "Please enter correct format, contains only uppercase letters";
+            }
         }
         if(val.id === 'dob')
         {
-            // if(val.value.length < 0)
-            // {
-            //     dobError = "Please Enter Date of birth";
-            //     formValidate = false;
-            // }
-            // else{
-            //     dobError = '';
-            //     formValidate = true;
-            // }
+            
             dobError = 
-                    val.value.length < 0 ? "Date of birth is required" : ""; 
+                    val.value.length === null ? "Date of birth is required" : ""; 
         }
-        if(val.id === 'email')
-        {
-            // if(val.value.length === null)
-            // {
-            //     emailError = "Please Enter email";
-            //     formValidate = false;
-            // }
-            // else{
-            //     emailError = '';
-            //     formValidate = true;
-            // }
-            emailError = 
-                    val.value.length === null ? "Email is required" : ""; 
-        }
+        // if(val.id === 'email')
+        // {   
+        //     emailError = 
+        //             emailRegx.test(val.value) ? "" : "Please enter correct format"; 
+        // }
         if(val.id === 'contact')
         {
-            // if(val.value.length < 10)
-            // {
-            //     contactError = "Please Enter correct contact number";
-            //     formValidate = false;
-            // }
-            // else{
-            //     contactError = '';
-            //     formValidate = true;
-            // }
             contactError = 
                     val.value.length < 10  ? "Enter correct contact number" : ""; 
         }
@@ -109,7 +77,7 @@ class AddInfo extends Component
         {
             if(val.value.length < 20)
             {
-                messageError = "Please Enter something about yourself";
+                messageError = "Please Enter something about yourself, contians atleast 20 characters";
                 formValidate = false;
             }
             else{
@@ -143,19 +111,19 @@ class AddInfo extends Component
             <div>
                 <form onSubmit={this.handleOnSumbmit}>
                     <label htmlFor="name">Name</label>
-                    <input type="text" id="name" name="name" onChange={this.handleOnChange} /><br />
+                    <input type="text" id="name" name="name" onChange={this.handleOnChange} required/><br />
                     <p className="errMsg">{this.state.formErrors.nameError}</p>
                     <label htmlFor="dob">Date of birth</label>
-                    <input type="date" id="dob" name="dob" onChange={this.handleOnChange} /><br />
+                    <input type="date" id="dob" name="dob" onChange={this.handleOnChange} required /><br />
                     <p className="errMsg">{this.state.formErrors.dobError}</p>
                     <label htmlFor="email">Email</label>
-                    <input type="email" id="email" name="email" onChange={this.handleOnChange} /><br />
+                    <input type="email" id="email" name="email" onChange={this.handleOnChange} required /><br />
                     <p className="errMsg">{this.state.formErrors.emailError}</p>
                     <label htmlFor="contact">Contact Number</label>
-                    <input type="tel" id="contact" name="contact" onChange={this.handleOnChange} /><br />
+                    <input type="number" id="contact" name="contact" onChange={this.handleOnChange} requird /><br />
                     <p className="errMsg">{this.state.formErrors.contactError}</p>
                     <label htmlFor="name">Tell me about urself</label>
-                    <textarea id="message" name="message" onChange={this.handleOnChange} /><br />
+                    <textarea id="message" name="message" onChange={this.handleOnChange} requird /><br />
                     <p className="errMsg">{this.state.formErrors.messageError}</p>
                     <button type="submit">Submit</button>
                 </form>

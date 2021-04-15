@@ -18,6 +18,7 @@ const styles = {
 const Display = (props) => {
     const {displayData} = props;
     const {classes} = props;
+    let isLogged = props.isLogged;
     const displayInfo = displayData.map(info => {
         return(
             <div>
@@ -37,7 +38,8 @@ const Display = (props) => {
                     <Typography className={classes.title}>Form Data</Typography>
                     <Typography>{displayInfo}</Typography>
                 </CardContent>
-            </Card>
+        </Card>
+            {isLogged ? "hai" : ""}
         </div>
     )
 }

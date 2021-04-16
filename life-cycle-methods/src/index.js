@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
+import HookUseEffect from './HookUseEffect';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HookUseEffect />
   </React.StrictMode>,
   document.getElementById('root')
 );

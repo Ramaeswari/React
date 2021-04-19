@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Assignment from './Assignment';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import HookUseEffect from './HookUseEffect';
-// import Assignment4 from './Assignment4';
+import Table from './Table';
 
 ReactDOM.render(
   <React.StrictMode>
-    <HookUseEffect />
-{/*<Assignment4 />*/}
+    <App />
+  {/*<Assignment />*/}
+  <Table />
   </React.StrictMode>,
   document.getElementById('root')
 );

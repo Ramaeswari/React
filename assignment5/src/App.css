@@ -1,0 +1,19 @@
+.signUpPage{
+  text-align: center;
+}
+.cards
+{
+  margin-top: 50px;
+}
+.cards .cardStyles{
+  height: 200px;
+}
+.cardTitle, .heading, .productDetails{
+  color:rgb(30, 133, 133);
+}
+.errMsg{
+  color: red;
+}
+.submitBtn{
+  margin-right: 50px;
+}

@@ -1,0 +1,10 @@
+.book-details{
+    margin-left: 350px;
+   
+}
+.book-details td{
+    width: 100px;
+}
+table td{
+    background-color: rgb(101, 158, 158);
+}

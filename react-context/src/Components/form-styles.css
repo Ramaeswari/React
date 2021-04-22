@@ -1,0 +1,10 @@
+form{
+    margin-bottom: 20px;
+}
+form input {
+    margin-right: 10px;
+}
+button{
+    background-color: rgb(101, 158, 158);
+    border: none;
+}

@@ -1,0 +1,25 @@
+.tableHeading{
+    background-color: #f50057;
+    color: white;
+}
+th, td{
+    text-align: left;
+}
+.actions{
+    opacity: 0;
+}
+tr:hover .actions{
+    opacity: 1;
+}
+tbody td a{
+    color: #222;
+}
+tbody td a:hover{
+    color: #222;
+}
+.removeIcon{
+    color:#f50057;
+}
+.card-header{
+    text-align: left;
+}

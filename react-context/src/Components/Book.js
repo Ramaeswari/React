@@ -7,7 +7,7 @@ const Book = ({name, price, YOB}) =>{
             <table  border="1" className="book-details">
             
             <tbody >
-                <tr>
+                <tr >
                     <td className="tableRows">{name}</td>
                     <td>{price}</td>
                     <td>{YOB}</td>

@@ -18,6 +18,7 @@ tbody td a:hover{
     color: #222;
 }
 .removeIcon{
+    cursor: pointer;
     color:#f50057;
 }
 .card-header{

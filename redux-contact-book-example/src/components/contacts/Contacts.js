@@ -9,7 +9,7 @@ const Contacts = () =>{
     console.log(contacts);
     return(
         <div className="container">
-        <table class="table shadow">
+        <table className="table shadow">
             <thead className="tableHeading">
                 <tr>
                     <th>

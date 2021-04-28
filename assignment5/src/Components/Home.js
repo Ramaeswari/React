@@ -25,8 +25,8 @@ class Home extends Component
             )
         })
         return(
-            <div>
-                {productsList}
+            <div className="container">
+            {productsList}
             </div>
         )
     }

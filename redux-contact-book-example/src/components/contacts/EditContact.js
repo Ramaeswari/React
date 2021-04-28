@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './styles.css'
 import {useDispatch} from 'react-redux';
-import { getContact } from '../../actions/ContactActions';
+import { getContact, updateContact } from '../../actions/ContactActions';
 import shortid from 'shortid';
 import {useHistory} from 'react-router-dom';
 import { useParams} from 'react-router-dom';
@@ -9,6 +9,7 @@ import {useSelector} from 'react-redux';
 
 const EditContact = () =>{
     let {id} = useParams();
+    // alert(id);
     let history = useHistory();
     const dispatch = useDispatch();
     const contact = useSelector(state =>state.contact.contact)
@@ -25,11 +26,14 @@ const EditContact = () =>{
         }
         dispatch(getContact(id));
     }, [contact]);
+    
 
     const onUpdateContact = (e) =>{
         e.preventDefault();
         const update_Contact = Object.assign(contact, {name: name, phone: phone, email: email});
         console.log(update_Contact);
+        dispatch(updateContact(update_Contact));
+        history.push("/");
     }
 
     return(

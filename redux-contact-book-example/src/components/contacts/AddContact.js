@@ -15,10 +15,11 @@ const AddContact = () =>{
     const createContact = (e) =>{
         e.preventDefault();
         const new_contact = {
+            id: shortid.generate(),
             name: name,
             phone: phone,
             email: email,
-            id: shortid.generate()
+            
         }
         dispatch(addContact(new_contact));
         history.push("/");

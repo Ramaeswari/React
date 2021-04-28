@@ -24,7 +24,7 @@ class SignUp extends Component
         e.preventDefault();
         if(this.state.formValidate === true)
         {
-            this.props.signUp(this.state);
+            // this.props.signUp(this.state);
             alert("Successfully created your account")
         }
         else
@@ -36,8 +36,12 @@ class SignUp extends Component
         e.preventDefault();
         console.log(e);
         this.validateForm(e.target);
-        const {name, value} = e.target;
-        let errors = this.state.errors;
+        // const {name, value} = e.target;
+        // let errors = this.state.errors;
+        this.setState({
+            [e.target.id]: e.target.value,
+            
+        })
     }
     validateForm = (val) => {
         let firstNameError = this.state.errors.firstNameError;
@@ -107,7 +111,7 @@ class SignUp extends Component
                 confirmPasswordError = "Confirm password is required"
                 formValidate = false;
             }
-            else if(val.value.confirmPassword !== val.password)
+            else if(val.value.confirmPassword != val.value.password)
             {
                 confirmPasswordError = "Password doesn't match";
                 formValidate = false;
@@ -176,9 +180,10 @@ class SignUp extends Component
                     </div>  
                     <p className="errMsg">{this.state.errors.confirmPasswordError}</p>
                     <div className="row">
-                        <Button type="submit" color="primary" variant="contained" className="submitBtn" mr={5}>Submit</Button>
-                        <Button variant="contained">Cancel</Button>
-                    </div>                 
+                        <Button type="submit" color="primary" variant="contained" className="submitBtn">Submit</Button>
+                        <Button variant="contained" type="submit" className="cancelBtn">Cancel</Button>                            
+                    </div>
+                 
             </form>
         </div>
         </div> 

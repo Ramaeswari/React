@@ -34,10 +34,7 @@ class SignUp extends Component
     }
     handleChange = (e) => {
         e.preventDefault();
-        console.log(e);
         this.validateForm(e.target);
-        // const {name, value} = e.target;
-        // let errors = this.state.errors;
         this.setState({
             [e.target.id]: e.target.value,
             
@@ -60,11 +57,12 @@ class SignUp extends Component
             else
             {
                 firstNameError = "";
-                formValidate = true;
+                // formValidate = true;
             }
         }
         if(val.id === 'lastName')
         {
+            
             if(val.value.length === 0)
             {
                 lastNameError = "LastName is required";
@@ -72,7 +70,7 @@ class SignUp extends Component
             }
             else{
                 lastNameError = "";
-                formValidate = true;
+                // formValidate = true;
             }
         }
         if(val.id === 'email')
@@ -84,11 +82,12 @@ class SignUp extends Component
             }
             else{
                 emailError ="";
-                formValidate = true;
+                // formValidate = true;
             }
         }
         if(val.id === 'password')
         {
+            
             if(val.value.length === 0)
             {
                 passwordError = "Password is required";
@@ -101,22 +100,27 @@ class SignUp extends Component
             }
             else{
                 passwordError ="";
-                formValidate = true;
+                // formValidate = true;
             }
         }
         if(val.id === 'confirmPassword')
-        {
+        {   
+            console.log(val.value.password);
+            console.log(val.value);
             if(val.value.length === 0)
             {
                 confirmPasswordError = "Confirm password is required"
                 formValidate = false;
             }
-            else if(val.value.confirmPassword != val.value.password)
+            else if(val.value !== this.state.password)
             {
+                console.log(val.value);
+                console.log(this.state.password)
                 confirmPasswordError = "Password doesn't match";
                 formValidate = false;
+                // formValidate = true;
             }
-            else if(val.value === val.value.password){
+            else if(val.value === this.state.password){
                 confirmPasswordError = "Password Matched";
                 formValidate = true;
             }
@@ -139,42 +143,42 @@ class SignUp extends Component
     render(){
         // const {errors} = this.state.errors;
         return(
-            <div className="row signUpPaage">
+            <div className="row signUpPage">
             <div className="container align-center">
                 <h4 className="heading">Sign Up Form</h4>
-                <form className="col s12" onSubmit={this.handleSubmit}>
+                <form className="col s12 form" onSubmit={this.handleSubmit}>
                     <div className="row">
-                        <div className="input-field col s3">
-                            <input id="firstName" type="text" name="firstName" className="validate" onChange={this.handleChange} required />
+                        <div className="input-field col s5">
+                            <input id="firstName" type="text" name="firstName" className="validate" onChange={this.handleChange}  />
                             <label htmlFor="firstName">First Name</label>
                         </div>                        
                     </div>
                     <p className="errMsg">{this.state.errors.firstNameError}</p>
                     <div className="row">
-                        <div className="input-field col s3">
+                        <div className="input-field col s5">
 
-                            <input id="lastName" type="text" name="lastName" className="validate" onChange={this.handleChange} required />
+                            <input id="lastName" type="text" name="lastName" className="validate" onChange={this.handleChange}  />
                             <label htmlFor="lastName">Last Name</label>
                         </div>
                     </div>
                     <p className="errMsg">{this.state.errors.lastNameError}</p>
                     <div className="row">
-                        <div className="input-field col s3">
-                            <input id="email" type="email" name="email" className="validate" onChange={this.handleChange} required />
+                        <div className="input-field col s5">
+                            <input id="email" type="email" name="email" className="validate" onChange={this.handleChange}  />
                             <label htmlFor="email">Email</label>
                         </div>                     
                     </div>
                     <p className="errMsg">{this.state.errors.emailError}</p>
                     <div className="row">
-                        <div className="input-field col s3">
-                            <input id="password" type="password" name="password" className="validate" onChange={this.handleChange} required />
+                        <div className="input-field col s5">
+                            <input id="password" type="password" name="password" className="validate" onChange={this.handleChange}  />
                             <label htmlFor="password">Password</label>
                         </div>
                     </div>
                     <p className="errMsg">{this.state.errors.passwordError}</p>
                     <div className="row">
-                        <div className="input-field col s3">
-                            <input id="confirmPassword" type="password" name="confirmPassword" className="validate" onChange={this.handleChange} required />
+                        <div className="input-field col s5">
+                            <input id="confirmPassword" type="password" name="confirmPassword" className="validate" onChange={this.handleChange}  />
                             <label htmlFor="confirmPassword">Confirm Password</label>
                         </div>
                     </div>  

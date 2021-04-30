@@ -1,5 +1,5 @@
 .signUpPage{
-  text-align: center;
+  margin-left: 400px;
 }
 .cards
 {
@@ -16,4 +16,15 @@
 }
 .submitBtn{
   padding-top: 30;
+}
+.form{
+  margin-left: 100px;
+}
+
+#cardData{
+  /* text-align: center; */
+  margin-left: 200px;
+}
+#cardData:hover{
+  background-color: red
 }

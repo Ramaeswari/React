@@ -1,0 +1,19 @@
+.detailsBtn{
+    margin-top: 20px;
+    /* margin-left: 20px; */
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+
+}
+.typeName{
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    /* border: 1px solid black; */
+    color: red;
+    /* border-radius: 50%; */
+}
+.form-input{
+    margin-top: 10px;
+}

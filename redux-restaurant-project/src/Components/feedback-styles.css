@@ -1,0 +1,67 @@
+.row{
+    padding-left: 100px;
+}
+.textAreaBox{
+    /* margin-left: -60px; */
+    margin-left: -180px;
+}
+.feedbackHeading{
+    margin-left: -350px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.radioBtns{
+    margin-left: -70px; 
+    font-size: 25px; 
+}
+.feedbackData{
+    /* margin-bottom: 100px; */
+    /* margin-left: 150px; */
+    justify-content: center;
+    text-align: center;
+    
+
+}
+.feedBackBtn{
+    margin-bottom: 135px;
+}
+.errMsg{
+    color: red;
+    font-size: 20px;
+}
+alert{
+    margin-top: 100px;
+}
+.submitBtn{
+    margin-top: 20px;
+}
+.col-form-label{
+    font-weight: bold;
+    /* margin-top: 10px; */
+}
+.inputLines{
+    margin-left: -40px;
+}
+.col-sm-4{
+    margin-top: -10px;
+    /* margin-left: -50px; */
+}
+.excellentRadio{
+    color: rgb(21, 197, 21);
+    font-weight: 600;
+}
+.goodRadio
+{
+    color:rgb(109, 248, 109);
+    font-weight: 600;
+}
+.averageRadio
+{
+    color: rgb(247, 81, 81);
+    font-weight: 600;
+}
+.dissatificationRadio
+{
+    color: red;
+    font-weight: 600;
+}

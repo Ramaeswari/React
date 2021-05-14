@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  /* font-family: 'Dancing Script', 'cursive'; */
+}
+
+.brand{
+  font-size: 30px;
+  margin-right: 600px;
+  font-family: 'Dancing Script', 'cursive';
+  
+}
+li{
+  margin-right: 15px;
+  font-size: 22px;
+  font-family: 'Dancing Script', 'cursive';
+}
+.form-input{
+  margin-left: 380px;
+  margin-right: 600px;
+}
+button{
+  margin-top: 30px;
+  margin-left: -50px;
+  font-size: 18px;
+}
+.searchBtn{
+  margin-left: -250px;
+}
+.card{
+  width: 350px;
+  /* height: 100px; */
+  display: inline-block;
+  margin-right: 20px;
+}
+/* .card-image{
+  width:auto;
+  
+} */
+

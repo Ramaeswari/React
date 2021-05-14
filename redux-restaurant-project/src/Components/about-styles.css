@@ -1,0 +1,45 @@
+.avatarImage{
+    display: flex;
+    justify-content: right;
+    margin-top: 50px;
+}
+
+/* .aboutMatter{
+    margin-top: 10px;
+} */
+h3{
+    color:rgba(38, 68, 67, 0.822);
+    font-family: 'Dancing Script', 'cursive';
+    font-size: 40px;
+    font-weight: bold;
+}
+.heading-background{
+    background-image: url('../images/background_image.jpg');
+    background-color: #cccccc;
+    height: 400px;
+    width: 100%;
+    background-position:inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color:rgba(38, 68, 67, 0.822);
+    padding-top: 80px;
+    font-size: 50px;
+    padding-right: 150px;
+    font-family: 'Dancing Script', 'cursive';
+    font-size: 70px;
+    font-weight: bold;
+}
+.aboutPassage{
+    margin-top: 20px;
+    line-height: 35px;
+}
+.quotation{
+    display: block;
+    font-family: 'Dancing Script', 'cursive';
+    font-size: 45px;
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 40px;
+    letter-spacing: 3px;
+}

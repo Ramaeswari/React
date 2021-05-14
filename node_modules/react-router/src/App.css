@@ -1,0 +1,37 @@
+.home
+{
+  /* background-image: url('https://i.imgur.com/YDwNPZg.jpg'); */
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  height: 400;
+  text-align: center;
+  color: rgb(22, 17, 17);
+  margin-top: 60px;
+}
+.heading
+{
+  margin-top: 100px;
+
+}
+.made
+{
+  color:rgb(163, 52, 7);
+  margin-left: 650px;
+  font-size: larger;
+}
+/* .loginPage, .loginContent .row .input-field
+{
+  text-align: center;
+}
+.formData{
+  text-align: center;
+} */
+.loginPage{
+  text-align: center;
+}

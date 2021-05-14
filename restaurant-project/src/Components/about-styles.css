@@ -1,0 +1,38 @@
+.avatarImage{
+    display: flex;
+    justify-content: right;
+    margin-top: 50px;
+}
+
+.aboutMatter{
+    margin-top: 10px;
+}
+h3{
+    color:rgba(38, 68, 67, 0.822);
+    font-family: 'Dancing Script', 'cursive';
+    font-size: 70px;
+    font-weight: bold;
+}
+.heading-background{
+    background-image: url('https://i.pinimg.com/originals/ea/aa/f2/eaaaf2bbdce3d0dc7126d308949b7d7c.jpg');
+    background-color: #cccccc;
+    height: 500px;
+    width: 1100px;
+    background-position:inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color:rgba(38, 68, 67, 0.822);
+    padding-top: 80px;
+    font-size: 50px;
+    padding-right: 150px;
+    font-family: 'Dancing Script', 'cursive';
+    font-size: 70px;
+    font-weight: bold;
+}
+span{
+    display: block;
+    font-family: 'Dancing Script', 'cursive';
+    font-size: 40px;
+    font-weight: 200;
+}

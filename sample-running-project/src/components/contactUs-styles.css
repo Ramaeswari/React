@@ -1,0 +1,42 @@
+.contactData{
+    margin-top: 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(235, 162, 212) 0%, rgba(97,97,163,1) 10%, rgba(162, 190, 235,0.8522759445575105) 51%, rgba(235, 188, 162) 99%);
+    height: 100px;
+    color:crimson;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+h2{
+    font-family: 'Dancing Script', 'cursive';
+    font-size: 40px;
+}
+.cards{
+    margin-top: 50px;
+    margin-bottom: 270px;
+}
+
+.contact-card{
+    width: 1100px;
+}
+.email-container, .contact-container{
+    width: 300px;
+    
+}
+form{
+    display: inline;
+}
+.email-container h4
+{
+    padding-top: 20px;
+}
+.contact-container h4{
+    padding-top: 20px;
+}
+/* .email-container, .contact-container p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+} */
+.email-container{
+    display: inline-block;
+}

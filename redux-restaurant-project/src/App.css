@@ -14,8 +14,16 @@
 }
 li{
   margin-right: 15px;
-  font-size: 22px;
+  font-size: 25px;
   font-family: 'Dancing Script', 'cursive';
+  
+}
+/* li:hover{
+  border-bottom: 1px solid black;
+  color: red;
+} */
+li:active{
+  background-color: yellow;
 }
 .form-input{
   margin-left: 380px;

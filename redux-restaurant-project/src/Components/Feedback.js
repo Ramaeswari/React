@@ -89,7 +89,8 @@ class Feedback extends Component{
     }
     render(){
     return(
-        <div className="container feedbackData">
+        <div className="feedbackData">
+        <div className="container ">
             <h3 className="feedbackHeading">Feedback page</h3>
             <form onSubmit={this.handleSubmit}>
                 <div class="form-group row">
@@ -158,7 +159,7 @@ class Feedback extends Component{
             </form>
             <Footer />
         </div>
-        
+        </div>
     )
     }
 }

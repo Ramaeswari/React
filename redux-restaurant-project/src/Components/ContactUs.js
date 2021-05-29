@@ -3,6 +3,8 @@ import './contactUs-styles.css';
 import Footer from './Footer';
 import { Card, CardContent, Typography, Button } from '@material-ui/core';
 import ContactNotification from './ContactNotification'
+import RecipesData from './RecipesData';
+import DisplayData from './DisplayData';
 
 class  ContactUs extends Component {
     state ={
@@ -159,6 +161,8 @@ class  ContactUs extends Component {
             </div>
                 
             </div>
+            {/*<RecipesData />*/}
+            {/*<DisplayData />*/}
             <Footer />
         </section>
     )

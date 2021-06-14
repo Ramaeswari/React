@@ -152,7 +152,7 @@ class Feedback extends Component{
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-4">
-                    {/*<button type="submit" class="btn btn-primary feedBackBtn">Submit</button>*/}
+                    
                     <Notification formValidate={this.state.formValidate} />
                     </div>
                 </div>

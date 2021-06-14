@@ -33,7 +33,8 @@ const Recipes = () => {
                     calories={recipe.calories}
                     fat={recipe.fat}
                     id={recipe.id} key={recipe.id}
-                    type={recipe.type}/>
+                    type={recipe.type}
+                    instructions={recipe.instructions}/>
                     
                     
                 ))

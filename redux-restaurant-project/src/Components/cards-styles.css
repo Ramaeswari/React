@@ -8,7 +8,8 @@
 }
 .card-details{
     font-family: 'Dancing Script', 'cursive';
-    font-size: 20px;
+    font-size: 25px;
+    display: block;
 }
 .typeName{
     text-align: right;
@@ -20,4 +21,12 @@
 }
 .form-input{
     margin-top: 10px;
+}
+.type-veg{
+    color: rgb(14, 187, 14);
+    font-weight: 700;
+}
+.type-non-veg{
+    color: red;
+    font-weight: 700;
 }

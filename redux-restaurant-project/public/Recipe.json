@@ -41,8 +41,8 @@
     },
     {
         "id": 6,
-        "title": "Apple Ice recipes",
-        "image": "https://www.edamam.com/web-img/dbd/dbd4bd58ebc7f049e17a320e18f72415",
+        "title": "Banana Cake recipe",
+        "image": "C:/Users/DIDDI ESWARI/Desktop/react/redux-restaurant-project/src/images/BananaCake.jpg",
         "calories": "1258.557999999773 kcal",
         "fat": "2.136839999997525 g",
         "type": "Veg"

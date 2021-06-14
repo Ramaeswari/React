@@ -153,13 +153,10 @@ class  ContactUs extends Component {
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-4">
-                    {/*<button type="submit" class="btn btn-primary feedBackBtn">Submit</button>*/}
                     <ContactNotification formValidate={this.state.formValidate} />
-                    {/*<Notification />*/}
                     </div>
                 </div>
             </div>
-                
             </div>
             {/*<RecipesData />*/}
             {/*<DisplayData />*/}

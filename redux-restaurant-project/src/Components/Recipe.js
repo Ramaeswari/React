@@ -4,25 +4,16 @@ import { Link } from 'react-router-dom';
 import './cards-styles.css';
 
 const Recipe = (props) => {
-    const {title, image, calories, fat,id,type} = props;
-    const typeChecking = () => {
-        if({type} === "Veg")
-        {
-            <span style="color: green">{type}</span>
-        }
-        else{
-            <span style="color: red">{type}</span>
-        }
-    }
+    const {title, image,id,type} = props;
+    
     return (
         <div className="card">
-            <p className="typeName">{type}</p>
+            <p className={type==="Veg" ? "type-veg" : "type-non-veg"}>{type}</p>
              <div className="card-image">
                 <img src={image}></img>
              </div>
              <div className="card-content">
-                <p><b className="card-details">{title}</b></p>
-                {/*<p>Calories: {calories}</p>*/}
+                <b className="card-details">{title}</b>
                 <Link to={`/recipe/${id}`}><button className="btn btn-primary detailsBtn">More Details</button></Link>
              </div>
              

@@ -34,12 +34,14 @@ const GetRecipe = () => {
             </div>
              <div className="card-content">
                 <b className="card-details">{recipe ? recipe.title : ""}</b>
-                <p><b>Calories:</b> {recipe ? recipe.calories : ""}</p>
+                {/*<p></p>*/}
+                <b>Calories:</b> {recipe ? recipe.calories : ""}<br />
                 
-                <p><b>Fat:</b> {recipe ? recipe.fat : ""}</p>
-                <p><b>Instructions to prepare: </b>{recipe ? recipe.instructions : ""}</p>
-                
-                <Link to="/"><button className="btn btn-secondary">Back</button></Link>
+                {/*<p></p>*/}
+                <b>Fat:</b> {recipe ? recipe.fat : ""}<br /><br />
+                {/*<p></p>*/}
+                <b>Instructions to prepare: </b>{recipe ? recipe.instructions : ""} <br />
+                <Link to="/"><button className="btn btn-secondary back-button">Back</button></Link>
              </div>
              
         </div>
